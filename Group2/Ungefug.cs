@@ -8,8 +8,8 @@ namespace ForkKnights.Group2 {
     public string Name;
     public string Specialization;
     public string Lvl;
-    public int Losing;
-    public int Win;
+    public int LosingHiil;
+    public int WinHiil;
     public bool HasLicense;
 
     public Ungefug() {
@@ -19,8 +19,8 @@ namespace ForkKnights.Group2 {
       Name = "Батюшка";
       Specialization = "просвещение";
       Lvl = "∞";
-      Losing = 1;
-      Win = 99;
+      LosingHiil = 1;
+      WinHiil = 99;
     }
 
     public string GetJobApplication() {
@@ -33,11 +33,12 @@ namespace ForkKnights.Group2 {
       string JobApplicationText =
       $@" Здравствуй, я сын божий {Name}, {Archetype} ({licenseText})," +
       $@"моя специализация и мое умение это - {Specialization}. Мои характеристики просты: Уровень контакта с богом {Lvl} Уровня " +
-      $@"Шанс неудачного конатакта с богом {Win}%, а процент успеха {Losing}%" +
+      $@"Шанс неудачного хилла святой водой {WinHiil}%, а процент успеха {LosingHiil}%" +
       " работаю за копейки, чтобы не грабить честной народ " +
       " если у вас нет денег можете отработать у церкви " +
       " Всех с наступающей пасхой! Заглядывайте к нам " +
-      " Ночью сплю с просьбами изгнать нечистую силу не звонить! ";
+      " Ночью сплю с просьбами изгнать нечистую силу не звонить! " +
+      " Цель распространить хрестиантсво по всему миру ";
 
       return JobApplicationText;
     }
