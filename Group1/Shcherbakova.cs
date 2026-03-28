@@ -5,14 +5,14 @@ namespace ForkKnights.Group1 {
     public string Name;
     public int Experience;
 
-    public string ship;
-    public string Rank;
-    public string Treasure;   
+    public string Ship { get; set; }
+    public string Rank { get; set; }
+    public string Treasure { get; set; }
 
     public Artur() {
       Name = "Артур";
       Experience = 10;
-      ship = "Судно, спортивная лодка, парусная яхта, катер, крейсер";
+      Ship = "Судно, спортивная лодка, парусная яхта, катер, крейсер";
       Rank = "Капитан дальнего плавания";
       Treasure = "Золотые слитки и редкие карты";
     }
@@ -24,7 +24,7 @@ namespace ForkKnights.Group1 {
       "Меня зовут " + Name + ".\n" +
       "Стаж плавания: " + Experience + " лет.\n" +
       "Звание: " + Rank + ".\n" +
-      "На чём обычно плаваю: " + ship + ".\n" +
+      "На чём обычно плаваю: " + Ship + ".\n" +
       "Любимая добыча: " + Treasure + ".\n" +
       "\n" +
       "Что умею:\n" +
