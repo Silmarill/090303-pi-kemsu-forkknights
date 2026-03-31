@@ -17,7 +17,7 @@ namespace ForkKnights {
       Console.WriteLine($"📦 Проект: {Assembly.GetExecutingAssembly().GetName().Name}");
       Console.WriteLine($"📁 Путь: {Assembly.GetExecutingAssembly().Location}");
       Console.WriteLine();
-      
+
       Console.WriteLine(" 🌟 ДОБРО ПОЖАЛОВАТЬ В МУЛЬТИВСЕЛЕННУЮ ЦИФРОВЫХ ВИТЯЗЕЙ! 🌟");
       Console.WriteLine("=========================================================");
       Console.WriteLine();
