@@ -6,39 +6,50 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace ForkKnights.Group1 {
-  public interface IKnight {
-    string GetJobAPPlication();
-  }
-
-  public class MyKnight : IKnight {
+  public class Kondratenko : IKnight {
     public string Name;
     public string Universe;
     public int PowerLevel;
-    public string FavorityColor;
-    public int CoffeeDrunk;
+    public string FavoriteColor;
+    public int CoffeeCount;
+    public string Weapon;
 
-    public MyKnight() {
-      Name = "Генадий";
-      Universe = "Чилл";
+    public Kondratenko() {
+      Name = "Gennadiy";
+      Universe = "CHILL";
       PowerLevel = 142;
-      FavorityColor = "Неоново фиолетовый";
-      CoffeeDrunk = 5;
+      FavoriteColor = "neon pink";
+      CoffeeCount = 42;
+      Weapon = "AK-47";
     }
 
-    public string GetJobAPPlication() {
-      return $"Приветствую грустные землянины, Меня зовут {Name}. " +
-             $"Моя сила просто улёт: {PowerLevel}. " +
-             $"Как у любых других людей, у меня есть 1-из любимых цветов {FavorityColor}. " +
-             $"Много работаю и пью 5 {CoffeeDrunk}. " +
-             $"Ищу кого то";
-    }
-  }
-}
+    public string GetJobApplication() {
+      string JobApplicationText = $@"⚔️ Внимание, Совет Магов и Гильдия Героев! ⚔️\n\n" +
+$"Перед вами {Name} — легендарный рыцарь из измерения {Universe}! 🛡️\n\n" +
+$"Мои параметры:\n" +
+$"💪 Уровень мощи: {PowerLevel} — этого хватит, чтобы одним ударом рассечь горный хребет!\n" +
+$"🗡️ Оружие: {Weapon} — клинок, выкованный из павшей звезды, не знает равных в бою!\n" +
+$"🎨 Любимый цвет: {FavoriteColor} — мой плащ различим даже сквозь магический туман!\n" +
+$"☕️ Зелье бодрости: {CoffeeCount} котлов — выпиваю каждое утро для поднятия духа!\n\n" +
 
-class Program 
-  {
-  static void Main() {
-    MyKnight knight = new MyKnight();
-    Console.WriteLine(knight.GetJobAPPlication());
+$"Что я могу предложить:\n" +
+$"• защита королевств от драконов любой сложности;\n" +
+$"• поиск древних артефактов в забытых подземельях;\n" +
+$"• обучение молодых паладинов искусству боя;\n" +
+$"• сопровождение торговых караванов через проклятые земли;\n" +
+$"• консультации по магической обороне (с демонстрацией силы).\n\n" +
+
+$"Почему стоит нанять именно меня?\n" +
+$"✓ не нарушаю данного слова;\n" +
+$"✓ не оставляю врагов в живых (кроме тех, кто сдался);\n" +
+$"✓ говорю с драконами на их языке;\n" +
+$"✓ работаю в любых землях — от эльфийских лесов до подгорных царств.\n\n" +
+$"⚠️ Предупреждение:\n" +
+$"- если забываю наточить меч, начинаю читать стихи собственного сочинения;\n" +
+$"- при виде эльфийского вина могу забыть о задании (но это лечится).\n\n" +
+$"Готов приступить к подвигам немедленно! Оплата — золотом, магическими кристаллами или свитками древних знаний.\n\n" +
+$"Найдите меня в таверне \"Танцующий тролль\" или отправьте письмо с почтовым голубем. Я услышу зов о помощи. 🏰⚔️";
+      return JobApplicationText;
+    }
   }
 }
