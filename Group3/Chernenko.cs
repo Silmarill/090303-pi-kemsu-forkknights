@@ -1,53 +1,37 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace ForkKnights.GroupExample {
-
-  //Имя класса должно быть фамилией
-  public class Chernenko : IKnight {
-    public string Archetype { get; set; }
-    public string Name;
-    public string Specialization;
-    public double AccuracyRate;
-    public int NeuroDeckCharge;
-    public bool HasLicense;
-    public List<string> PastYearLicenseList;
+namespace ForkKnights.Group1 {
+  internal class Chernenko : IKnight {
+    public int healthPoints;
+    public string name;
+    public string specialization { get; set; }
+    public int manaPoints;
+    public int damage;
+    public int age;
+    public string weapon { get; set; }
+    public string element { get; set; }
 
     public Chernenko() {
-
-      Archetype = "Cyber Detective";
-      HasLicense = true;
-
-      PastYearLicenseList = new List<string> { "2517", "2312", "2099" };
-      PastYearLicenseList.Add("2075");
-      Name = "Декард-2077";
-      Specialization = "идентификация репликантов, работа с нейросетями класса «Оракул»";
-      AccuracyRate = 0.003;
-      NeuroDeckCharge = 42;
+      healthPoints = 120;
+      name = "Северный Вихрь";
+      specialization = "Друид Севера";
+      manaPoints = 200;
+      damage = 55;
+      age = 847;
+      weapon = "Посох Ледяного Древа";
+      element = "Лёд и Ветер";
     }
 
     public string GetJobApplication() {
+      string jobAnnouncement;
 
-      // Никогда не используйте тернарный оператор.
-      string licenseText = HasLicense ? "есть лицензия" : "лицензия в процессе оформления";
+      jobAnnouncement = "";
 
-      // почему где-то есть $@, а где-то нет??? и зачем @?
-      // изучите что такое вребатимные строки и интерполяция
-      string JobApplicationText =
-      $@"🧬 Всем привет, я {Name}, кибер-детектив ({licenseText}) на отлов электроовец," +
-      $@"специализируюсь на {Specialization} 🕶️🐑 Мои способности: сканирование бинарных снов через " +
-      $@"прямой интерфейс кибердек (сейчас заряжен на {NeuroDeckCharge}%), анализ эмоциональных отпечатков" +
-      $@" с точностью до {AccuracyRate}%, а также чтение памяти на уровне синапсов, если клиент подпишет" +
-      " нужные бумаги 📜⚡ Ищу работу в корпорации или частном секторе: готов вести внутренние " +
-      "расследования, проверять сотрудников на «человечность», консультировать по вопросам " +
-      "кибербезопасности с уклоном в психологию 🤖🧠 Из сильных сторон — принципиальность, " +
-      "профессионализм и умение отличать органический страх от программного сбоя 😎 Слабые " +
-      "стороны — иногда слишком увлекаюсь расследованием, забываю вовремя заряжать кибердек (а " +
-      $@"он сейчас на {NeuroDeckCharge}%, между прочим), и панически боюсь живых овец, даже если это " +
-      "просто овцы 🐑💥 Готов к работе в любом часовом поясе, оплата — электроовцами или новыми " +
-      "нейросетевыми прошивками, в идеале — и тем, и другим.";
-
-      return JobApplicationText;
+      return jobAnnouncement;
     }
   }
 }
