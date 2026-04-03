@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Group3\nikitin.cs" />
     <Compile Include="Group3\Konovalov.cs" />
     <Compile Include="Group3\Soldatov.cs" />
     <Compile Include="Group3\Nekrasov.cs" />
