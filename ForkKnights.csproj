@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Group2\Dedushev.cs" />
     <Compile Include="Group2\Ginzhul.cs" />
+    <Compile Include="Group2\Nesterov.cs" />
     <Compile Include="Group3\Chernenko.cs" />
     <Compile Include="Group1\Vorobev.cs" />
     <Compile Include="Group1\Doroshkevich.cs" />
@@ -62,12 +63,6 @@
     <None Include=".editorconfig" />
     <None Include="App.config" />
   </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Group1\" />
-    <Folder Include="Group2\" />
-    <Folder Include="Group3\" />
-  </ItemGroup>
-
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
