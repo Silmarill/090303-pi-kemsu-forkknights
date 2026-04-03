@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
 
+ <Compile Include="Group1\Kondratenko.cs" />
     <Compile Include="Group1\Kondratenko.cs" />  
     <Compile Include="Group1\Ikkert.cs" />
     <Compile Include="Group1\Bobkova.cs" />
@@ -60,6 +61,7 @@
     <Compile Include="Group3\Soldatov.cs" />
     <Compile Include="Group3\Nekrasov.cs" />
     <Compile Include="Group3\Rudnev.cs" />
+
     <Compile Include="GroupExample\Burmin.cs" />
     <Compile Include="IKnight.cs" />
     <Compile Include="Program.cs" />
