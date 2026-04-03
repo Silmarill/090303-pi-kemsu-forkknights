@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+     
+    <Compile Include="Group1\Ikkert.cs" />
     <Compile Include="Group1\Bobkova.cs" />
     <Compile Include="Group1\Baklanova.cs" />
     <Compile Include="Group2\Skachkov.cs" />
@@ -75,4 +77,5 @@
   </ItemGroup>
 
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+
 </Project>
