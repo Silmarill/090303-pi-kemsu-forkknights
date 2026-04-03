@@ -43,11 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Group3\Nikitin.cs" />
+    <Compile Include="Group1\Vorobev.cs" />
+    <Compile Include="Group1\Doroshkevich.cs" />
+    <Compile Include="Group3\nikitin.cs" />
     <Compile Include="Group3\Konovalov.cs" />
     <Compile Include="Group3\Soldatov.cs" />
     <Compile Include="Group3\Nekrasov.cs" />
     <Compile Include="Group3\Rudnev.cs" />
+
     <Compile Include="GroupExample\Burmin.cs" />
     <Compile Include="IKnight.cs" />
     <Compile Include="Program.cs" />
@@ -60,6 +63,7 @@
   <ItemGroup>
     <Folder Include="Group1\" />
     <Folder Include="Group2\" />
+    <Folder Include="Group3\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
