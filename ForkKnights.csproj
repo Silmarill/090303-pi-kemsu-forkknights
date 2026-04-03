@@ -43,19 +43,43 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Group1\Shcherbakova.cs" />
+
+ <Compile Include="Group1\Shcherbakova.cs" />
+ <Compile Include="Group1\Kondratenko.cs" />
+    <Compile Include="Group1\Kondratenko.cs" />  
+    <Compile Include="Group1\Ikkert.cs" />
+    <Compile Include="Group1\Bobkova.cs" />
+    <Compile Include="Group1\Baklanova.cs" />
+    <Compile Include="Group2\Skachkov.cs" />
+    <Compile Include="Group2\Dedushev.cs" />
+    <Compile Include="Group2\Ginzhul.cs" />
+    <Compile Include="Group2\Nesterov.cs" />
+    <Compile Include="Group3\Chernenko.cs" />
+    <Compile Include="Group1\Vorobev.cs" />
+    <Compile Include="Group1\Doroshkevich.cs" />
+    <Compile Include="Group3\nikitin.cs" />
+    <Compile Include="Group3\Konovalov.cs" />
+    <Compile Include="Group3\Soldatov.cs" />
+    <Compile Include="Group3\Nekrasov.cs" />
+    <Compile Include="Group3\Rudnev.cs" />
+
+
     <Compile Include="GroupExample\Burmin.cs" />
     <Compile Include="IKnight.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Group2\Saibuu.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".editorconfig" />
     <None Include="App.config" />
   </ItemGroup>
+
   <ItemGroup>
     <Folder Include="Group2\" />
     <Folder Include="Group3\" />
   </ItemGroup>
+
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+
 </Project>
